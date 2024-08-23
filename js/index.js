@@ -845,14 +845,6 @@ const data = [
                     <p class="text-gray-600">Price: ${item.price} ${item.currency}</p>
                     <p class="text-gray-600">Location: ${item.city}</p>
                     <p class="text-gray-600">Type: ${item.banType}</p>
-                    <div class="mt-4 flex gap-2">
-                        <span class="inline-block px-4 py-1 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">
-                            ${item.credit ? 'Available for Credit' : 'Not for Credit'}
-                        </span>
-                        <span class="inline-block px-4 py-1 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">
-                            ${item.barter ? 'Available for Barter' : 'Not for Barter'}
-                        </span>
-                    </div>
                 </div>
             </div>
         `
