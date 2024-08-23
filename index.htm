@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
+                extend: {
+                    spacing: {
+                        'container': '200px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-100">
+    <header>
+        <div class="w-[95%] mx-auto lg:w-[90%]">
+            <div id="headerTop1" class="container mx-auto bg-white flex justify-between items-center p-3">
+                <div class="flex justify-center items-center gap-10">
+                    <a
+                        class="md:text-sm text-red-700 hover:text-gray-400 font-bold uppercase text-2xl cursor-pointer">Turbo.Az</a>
+                    <a
+                        class="md:text-sm text-gray-400 hover:text-red-700 font-bold uppercase text-2xl cursor-pointer">Bina.Az</a>
+                    <a
+                        class="md:text-sm text-gray-400 hover:text-red-700 font-bold uppercase text-2xl cursor-pointer">tap.az</a>
+                </div>
+                <div class="hidden md:flex gap-5 px-3">
+                    <p class="text-gray-400 hover:text-red-700 cursor-pointer">Dəstək: (012) 505-77-55</p>
+                    <a href="#" class="text-gray-400 hover:text-red-700 cursor-pointer">Yardim</a>
+                    <a href="#" class="uppercase text-gray-400 hover:text-red-700 cursor-pointer">Ru</a>
+                    <span class="text-gray-400 hover:text-red-700 cursor-pointer"> <i
+                            class="fa-solid fa-heart px-2 text-gray-400 hover:text-red-700 cursor-pointer"></i>
+                        Favorites</span>
+                    <span class="text-gray-400 hover:text-red-700 cursor-pointer"> <i
+                            class="fa-solid fa-user px-2 text-gray-400 hover:text-red-700 cursor-pointer"></i>
+                        Giris</span>
+                </div>
+                <div class="bg-red-700 p-3 rounded-full md:hidden">
+                    <i class="fa-solid fa-plus text-white p-2"></i>
+                </div>
+            </div>
+            <div id="headerTop2" class="hidden md:flex container mx-auto hidden md:flex bg-red-700 justify-between items-center p-3">
+                <div class="flex justify-center items-center gap-10">
+                    <a class="text-white hover:text-gray-400 font-bold uppercase text-2xl cursor-pointer">Turbo.Az</a>
+                </div>
+                <ul class="text-white flex gap-5">
+                    <li><a href="#">Butun elanlar</a></li>
+                    <li><a href="#">Salonlar</a></li>
+                    <li><a href="#">Avtokataloq</a></li>
+                    <li><a href="#">Moto</a></li>
+                    <li><a href="#">Ehtiyat hisseleri ve Aksesuarlar</a></li>
+                    <li><a href="#">Icare</a></li>
+                </ul>
+                <div class="bg-green-400 text-white p-2 rounded-[10px]">Yeni elanlar</div>
+            </div>
+            <div id="headerTop3" class="hidden md:flex container mx-auto p-3">
+                <div class="py-4 flex justify-between">
+                    <div class="w-[150px] lg:w-[200px]"><input type="text" placeholder="Marka"
+                            class="w-full rounded-[5px] h-[30px] p-3" /></div>
+                    <div class="w-[150px] lg:w-[200px]"><input type="text" placeholder="Model"
+                            class="w-full rounded-[5px] h-[30px] p-3" /></div>
+                    <div class="w-[250px] lg:w-[300px] px-6"><span
+                            class="w-[70px] px-2 bg-red-700 inline-block h-[30px] pt-2 text-white rounded-l-lg">Hamisi</span><span
+                            class="w-[70px] px-3 bg-white inline-block h-[30px] pt-2 text-gray-400">Yeni</span><span
+                            class="w-[70px] px-2 px-3 bg-white inline-block h-[30px] pt-2 text-gray-400 border-l-2">Surulmus</span>
+                    </div>
+                    <div><input type="text" placeholder="Model"
+                            class="w-[150px] lg:w-[300px] rounded-[5px] h-[30px] p-3" /></div>
+                </div>
+            </div>
+
+            <div id="headerTop4" class="hidden md:flex container mx-auto p-3">
+                <div class="py-4 flex justify-between">
+                    <div class="w-[150px] lg:w-[300px]"><input type="text" placeholder="Qiymet, min."
+                            class="w-[50%] rounded-l-lg h-[30px] p-2 border-r-2" /><input type="text" placeholder="maks"
+                            class="w-[50%] h-[30px] rounded-r-lg p-3" /></div>
+                    <div class="w-[160px] flex gap-5"><span
+                            class="px-2 bg-white inline-block h-[30px] pt-2 text-gray-400 rounded-[5px]">AZE</span><span
+                            class="px-3 bg-white inline-block h-[30px] pt-2 text-gray-400 rounded-[5px]">Kredit</span><span
+                            class="px-2 px-3 bg-white inline-block h-[30px] pt-2 text-gray-400 rounded-[5px]">Barter</span>
+                    </div>
+                    <div><input type="text" placeholder="Ban novu"
+                            class="w-[150px] lg:w-[300px] rounded-[5px] h-[30px] p-3" /></div>
+                    <div class="flex justify-between">
+                        <div class="w-[150px] lg:w-[300px]"><input type="text" placeholder="Il, min."
+                                class="w-[50%] rounded-l-lg h-[30px] p-2 border-r-2" /><input type="text"
+                                placeholder="maks" class="w-[50%] h-[30px] rounded-r-lg p-3" /></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="headerMain" class="container mx-auto">
+                <div class="p-3 m-2 rounded-lg bg-white">
+                    <div class="py-4">
+                        <i class="fa-solid fa-car text-red-700 px-3"></i>
+                        <span>Bütün markalar</span>
+                    </div>
+                    <hr />
+                    <div class="py-4">
+                        <i class="fa-solid fa-arrow-down-wide-short text-red-700 px-3"></i>
+                        <span>Filtrler</span>
+                    </div>
+                </div>
+                <div class="bg-white py-4 p-3 m-2 rounded-lg">
+                    <span>Moto</span>
+                </div>
+                <div class="bg-white py-4 p-3 m-2 rounded-lg">
+                    <span>Avtokataloq <span class="bg-green-500 text-white p-1 m-2 pb-2 rounded-xl">yeni</span></span>
+                </div>
+            </div>
+    </header>
+
+    <main class="container mx-auto">
+        <div class="p-3 text-xl">Bu gün: <a href="#" class="text-blue-600">1236 yeni elan</a></div>
+        <div class="bg-[url('/img/img1.png')] bg-cover bg-center px-5 h-64 my-4"></div>
+        <ul class="flex justify-between px-3 text-xl">
+            <li><a href="#" class="border-b-2 border-red-700">Kredit</a></li>
+            <li><a href="#" class="border-b-2 border-red-700">Barter</a></li>
+            <li><a href="#" class="border-b-2 border-red-700">Aksesuarlar</a></li>
+            <li><a href="#" class="border-b-2 border-red-700">Şinler</a></li>
+            <li><a href="#" class="border-b-2 border-red-700">İcarə</a></li>
+        </ul>
+        <div class="p-3 py-4 text-2xl text-gray-400 uppercase">Premium elanlar</div>
+        <div class="p-3">
+            <div id="card-container" class="flex p-[4rem] flex-row flex-wrap gap-5 pb-20">
+                <!-- <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+                        <img class="w-full h-48 object-cover"
+                            src="https://turbo.azstatic.com/uploads/f710x568/2023%2F01%2F11%2F11%2F19%2F41%2F5f34c8eb-5138-4d0c-b78e-8c817d98aa5f%2F52522_Mu2ZZs1LqQkRDJpgK-R_xw.jpg"
+                            alt="Abarth Seltos">
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-gray-800">Abarth Seltos</h2>
+                            <p class="text-gray-600">Model: Seltos</p>
+                            <p class="text-gray-600">Year: 2005</p>
+                            <p class="text-gray-600">Odometer: 30,000 km</p>
+                            <p class="text-gray-600">Engine: 1.5 L</p>
+                            <p class="text-gray-600">Price: 44,000 AZN</p>
+                            <p class="text-gray-600">Location: Bakı</p>
+                            <p class="text-gray-600">Type: Offroader / SUV</p>
+                            <div class="mt-4">
+                                <span
+                                    class="inline-block px-4 py-1 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full">Not
+                                    for Credit</span>
+                                <span
+                                    class="inline-block px-4 py-1 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full ml-2">Not
+                                    for Barter</span>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </main>
+
+
+
+    </div>
+
+
+
+
+    <footer class="bg-white fixed bottom-0 left-0 w-full bg-gray-800 text-white p-3 z-10 h-20">
+        <div class="px-3 flex justify-between items-center">
+            <div class="relative z-20 flex flex-col items-center">
+                <i class="fa-solid fa-house py-2 text-red-700"></i>
+                <p class="text-red-700">Home</p>
+            </div>
+            <div class="relative z-20 flex flex-col items-center">
+                <i class="fa-regular fa-heart py-2 text-gray-500"></i>
+                <p class="text-gray-500">Favorites</p>
+            </div>
+            <div class="relative z-20 flex flex-col items-center justify-center">
+                <i class="fa-solid fa-plus text-white bg-red-700 p-3 rounded-full transform -translate-y-1/2"></i>
+                <p class="text-gray-500">New</p>
+            </div>
+            <div class="relative z-20 flex flex-col items-center">
+                <i class="fa-regular fa-user py-2 text-gray-500"></i>
+                <p class="text-gray-500">Profile</p>
+            </div>
+            <div class="relative z-20 flex flex-col items-center">
+                <i class="fa-solid fa-bars py-2 text-gray-500"></i>
+                <p class="text-gray-500">More</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
