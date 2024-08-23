@@ -834,7 +834,7 @@ const data = [
     for (let i = 0; i < data.length; i++) {
         const item = data[i];
         const cardHtml = `
-            <div class="w-[48%] md:w-[31%] lg:w-[23%] mx-auto bg-white shadow-md rounded-lg overflow-hidden sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl pb-7">
+            <div class="w-[45%] md:w-[28%] lg:w-[23%] mx-auto bg-white shadow-md rounded-lg overflow-hidden sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl pb-7">
                 <img class="w-full mx-auto h-[150px] object-cover" src="${item.images[0]}" alt="${item.brand} ${item.model}">
                 <div class="p-6">
                     <h2 class="text-xl font-bold text-gray-800">${item.brand} ${item.model}</h2>
