@@ -829,24 +829,70 @@ const data = [
   },
 ]
 
-    const cardContainer = document.getElementById('card-container');
+   
+      const markaSet = new Set()
+      const modelSet = new Set()
 
-    for (let i = 0; i < data.length; i++) {
-        const item = data[i];
-        const cardHtml = `
-            <div class="w-[45%] md:w-[28%] lg:w-[23%] mx-auto bg-white shadow-md rounded-lg overflow-hidden sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl pb-7">
-                <img class="w-full mx-auto h-[150px] object-cover" src="${item.images[0]}" alt="${item.brand} ${item.model}">
-                <div class="p-6">
-                    <h2 class="text-xl font-bold text-gray-800">${item.brand} ${item.model}</h2>
-                    <p class="text-gray-600">Model: ${item.model}</p>
-                    <p class="text-gray-600">Year: ${item.year}</p>
-                    <p class="text-gray-600">Odometer: ${item.odometer} ${item.odometerUnit}</p>
-                    <p class="text-gray-600">Engine: ${item.engine} L</p>
-                    <p class="text-gray-600">Price: ${item.price} ${item.currency}</p>
-                    <p class="text-gray-600">Location: ${item.city}</p>
-                    <p class="text-gray-600">Type: ${item.banType}</p>
+      for (let j = 0; j < data.length; j++) {
+          markaSet.add(data[j].brand)
+          modelSet.add(data[j].model)
+      }
+
+      const marka = Array.from(markaSet)
+      const model = Array.from(modelSet)
+
+      function addMarkaSelect() {
+          const markList = document.getElementById('markList')
+          markList.innerHTML = ''
+
+          const modelList = document.getElementById('modelList')
+          modelList.innerHTML = ''
+
+          for (let j = 0; j < marka.length; j++) {
+              markList.innerHTML += `<option value="${marka[j]}"></option>`
+              modelList.innerHTML += `<option value="${model[j]}"></option>`
+          }
+          
+      }
+      addMarkaSelect()
+
+
+
+    window.onload = function() {
+    const cardContainer = document.getElementById('card-container');
+    const markInput = document.getElementById('markInput');
+
+    function cardGoster(filtercard) {
+        cardContainer.innerHTML = ''
+        filtercard.forEach(item => {
+            const cardHtml = `
+                <div class="w-[45%] md:w-[28%] lg:w-[23%] mx-auto bg-white shadow-md rounded-lg overflow-hidden sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl pb-7">
+                    <img class="w-full mx-auto h-[150px] object-cover" src="${item.images[0]}" alt="${item.brand} ${item.model}">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold text-gray-800">${item.brand} ${item.model}</h2>
+                        <p class="text-gray-600">Model: ${item.model}</p>
+                        <p class="text-gray-600">Year: ${item.year}</p>
+                        <p class="text-gray-600">Odometer: ${item.odometer} ${item.odometerUnit}</p>
+                        <p class="text-gray-600">Engine: ${item.engine} L</p>
+                        <p class="text-gray-600">Price: ${item.price} ${item.currency}</p>
+                        <p class="text-gray-600">Location: ${item.city}</p>
+                        <p class="text-gray-600">Type: ${item.banType}</p>
+                    </div>
                 </div>
-            </div>
-        `
-        cardContainer.innerHTML += cardHtml;
+            `;
+            cardContainer.innerHTML += cardHtml;
+        });
     }
+
+    function filterCards() {
+        const search = markInput.value.toLowerCase();
+        const filtercard = data.filter(item => item.brand.toLowerCase().includes(search));
+        cardGoster(filtercard);
+    }
+
+    markInput.addEventListener('input', filterCards);
+
+    cardGoster(data);
+};
+
+    
