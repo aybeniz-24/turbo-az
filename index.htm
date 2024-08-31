@@ -32,8 +32,8 @@
 
 <body class="bg-slate-100">
     <header>
-        <div class=" lg:w-[90%] mx-auto">
-            <div class="bg-white">
+        <div class=" lg:w-[100%] mx-auto ">
+            <div class="xl:px-[200px] bg-white">
                 <div id="headerTop1" class="container mx-auto flex justify-between items-center p-3">
                     <div class="flex justify-center items-center gap-10">
                         <a
@@ -60,9 +60,11 @@
                 </div>
             </div>
             <div class="bg-red-700">
-                <div id="headerTop2" class="hidden md:flex container mx-auto hidden md:flex  justify-between items-center p-3">
+                <div id="headerTop2"
+                    class="xl:px-[200px] hidden md:flex container mx-auto hidden md:flex  justify-between items-center p-3">
                     <div class="flex justify-center items-center gap-10">
-                        <a class="text-white hover:text-gray-400 font-bold uppercase text-2xl cursor-pointer">Turbo.Az</a>
+                        <a
+                            class="text-white hover:text-gray-400 font-bold uppercase text-2xl cursor-pointer">Turbo.Az</a>
                     </div>
                     <ul class="text-white flex gap-5">
                         <li><a href="#">Butun elanlar</a></li>
@@ -75,52 +77,70 @@
                     <div class="bg-green-400 text-white p-2 rounded-[10px]">Yeni elanlar</div>
                 </div>
             </div>
-            <div id="form" class="container w-[100%] mx-auto my-[20px] flex gap-[20px]">
+            <div id="form" class="xl:px-[200px] container w-[100%] mx-auto my-[20px] flex gap-[20px]">
                 <div id="formDiv1" class="w-[24%]">
                     <div class="my-[20px] w-[100%]">
-                        <input list="markList" id="markInput" class="w-[100%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="Mark" />
+                        <input list="markList" id="markInput"
+                            class="w-[100%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="Mark" />
                         <datalist id="markList">
                         </datalist>
                     </div>
                     <div class="flex">
-                        <input class="w-[50%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="number=" placeholder="Qiymet, min." />
-                        <input class="w-[50%] h-30px p-[5px] border-[2px] rounded-[5px]" type="number" placeholder="max." />
+                        <input class="w-[50%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="number="
+                            placeholder="Qiymet, min." />
+                        <input class="w-[50%] h-30px p-[5px] border-[2px] rounded-[5px]" type="number"
+                            placeholder="max." />
                     </div>
                 </div>
                 <div id="formDiv2" class="w-[24%]">
                     <div class="my-[20px] w-[100%]">
-                        <input list="modelList" id="modelInput" class="w-[100%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="Model" />
+                        <input list="modelList" id="modelInput"
+                            class="w-[100%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="Model" />
                         <datalist id="modelList">
                         </datalist>
                     </div>
                     <div class="flex gap-[10px] pb-[10px]">
-                        <input class="w-[30%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="AZN" />
-                        <input class="w-[30%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="Kredit" />
-                        <input class="w-[30%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="Barter" />
+                        <input class="w-[30%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="AZN" />
+                        <input class="w-[30%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="Kredit" />
+                        <input class="w-[30%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="Barter" />
                     </div>
                 </div>
                 <div id="formDiv3" class="w-[24%]">
                     <div class="flex gap-[10px] pt-[20px]">
-                        <input class="w-[30%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="AZN" />
-                        <input class="w-[30%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="Kredit" />
-                        <input class="w-[30%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="Barter" />
+                        <input class="w-[30%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="AZN" />
+                        <input class="w-[30%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="Kredit" />
+                        <input class="w-[30%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="Barter" />
                     </div>
                     <div class="my-[20px] w-[100%]">
-                        <input class="w-[100%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="Mark" />
+                        <input class="w-[100%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="Mark" />
                     </div>
                 </div>
                 <div id="formDiv4" class="w-[24%]">
                     <div class="my-[20px] w-[100%]">
-                        <input class="w-[100%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="Seher" />
+                        <input class="w-[100%] h-[40px] p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="Seher" />
                     </div>
                     <div class="flex">
-                        <input class="w-[50%] h-[40px] p-[5px] border-[2px] rounded-[5px] " type="text" placeholder="Il, min." />
-                        <input class="w-[50%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text" placeholder="max." />
+                        <input class="w-[50%] h-[40px] p-[5px] border-[2px] rounded-[5px] " type="text"
+                            placeholder="Il, min." />
+                        <input class="w-[50%] h-40px p-[5px] border-[2px] rounded-[5px]" type="text"
+                            placeholder="max." />
                     </div>
                 </div>
             </div>
+            
+            <div class="container mx-auto xl:px-[200px] pb-[20px] text-xl">Bu gün: <a href="#" class="text-blue-600">1236 yeni elan</a></div>
 
-            <div id="headerMain" class="container mx-auto">
+            <div id="headerMain" class="container mx-auto xl:hidden">
                 <div class="p-3 m-2 rounded-lg bg-white">
                     <div class="py-4">
                         <i class="fa-solid fa-car text-red-700 px-3"></i>
@@ -138,23 +158,22 @@
                 <div class="bg-white py-4 p-3 m-2 rounded-lg">
                     <span>Avtokataloq <span class="bg-green-500 text-white p-1 m-2 pb-2 rounded-xl">yeni</span></span>
                 </div>
-                <div class="p-3 text-xl">Bu gün: <a href="#" class="text-blue-600">1236 yeni elan</a></div>
-        <div class="bg-[url('/img/img1.png')] bg-cover bg-center w-[99%] mx-auto p-5 h-64 my-4"></div>
-        <ul class="flex justify-between p-4 text-xl">
-            <li><a href="#" class="border-b-2 border-red-700">Kredit</a></li>
-            <li><a href="#" class="border-b-2 border-red-700">Barter</a></li>
-            <li><a href="#" class="border-b-2 border-red-700">Aksesuarlar</a></li>
-            <li><a href="#" class="border-b-2 border-red-700">Şinler</a></li>
-            <li><a href="#" class="border-b-2 border-red-700">İcarə</a></li>
-        </ul>
-        <div class="p-3 py-4 text-2xl text-gray-400 uppercase">Premium elanlar</div>
-        
+                <div class="bg-[url('/img/img1.png')] bg-cover bg-center w-[99%] mx-auto p-5 h-64 my-4"></div>
+                <ul class="flex justify-between p-4 text-xl">
+                    <li><a href="#" class="border-b-2 border-red-700">Kredit</a></li>
+                    <li><a href="#" class="border-b-2 border-red-700">Barter</a></li>
+                    <li><a href="#" class="border-b-2 border-red-700">Aksesuarlar</a></li>
+                    <li><a href="#" class="border-b-2 border-red-700">Şinler</a></li>
+                    <li><a href="#" class="border-b-2 border-red-700">İcarə</a></li>
+                </ul>
             </div>
+
+            <div class="container mx-auto xl:px-[200px] p-3 py-4 text-2xl text-gray-400 uppercase">Premium elanlar</div>
     </header>
     </div>
 
     <main>
-        <div class="p-3">
+        <div class="p-3 xl:px-[200px]">
             <div id="card-container" class="flex flex-row flex-wrap gap-5 pb-20 container mx-auto">
 
             </div>
@@ -162,27 +181,186 @@
     </main>
 
 
-    <footer class="bg-white fixed bottom-0 left-0 w-full text-white p-3 z-10 h-20">
-        <div class="px-3 flex justify-between items-center">
-            <div class="relative z-20 flex flex-col items-center">
-                <i class="fa-solid fa-house py-2 text-red-700"></i>
-                <p class="text-red-700">Home</p>
+    <footer>
+
+        <div class="xl:hidden bg-white fixed bottom-0 left-0 w-full text-white p-3 z-10 h-20">
+            <div class="px-3 flex justify-between items-center">
+                <div class="relative z-20 flex flex-col items-center">
+                    <i class="fa-solid fa-house py-2 text-red-700"></i>
+                    <p class="text-red-700">Home</p>
+                </div>
+                <div class="relative z-20 flex flex-col items-center">
+                    <i class="fa-regular fa-heart py-2 text-gray-500"></i>
+                    <p class="text-gray-500">Favorites</p>
+                </div>
+                <div class="relative z-20 flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-plus text-white bg-red-700 p-3 rounded-full transform -translate-y-1/2"></i>
+                    <p class="text-gray-500">New</p>
+                </div>
+                <div class="relative z-20 flex flex-col items-center">
+                    <i class="fa-regular fa-user py-2 text-gray-500"></i>
+                    <p class="text-gray-500">Profile</p>
+                </div>
+                <div class="relative z-20 flex flex-col items-center">
+                    <i class="fa-solid fa-bars py-2 text-gray-500"></i>
+                    <p class="text-gray-500">More</p>
+                </div>
             </div>
-            <div class="relative z-20 flex flex-col items-center">
-                <i class="fa-regular fa-heart py-2 text-gray-500"></i>
-                <p class="text-gray-500">Favorites</p>
+        </div>
+        
+        <div id="desktopFooter" class="hidden md:block">
+            <div class="border-y-[3px] xl:px-[200px]">
+                <div id="footer2" class="container p-[20px] mx-auto flex  justify-between">
+                    <div>Reklam yerlesdirin</div>
+                    <div class="flex justify-between gap-[10px]">
+                        <div><i class="text-3xl px-[5px] text-red-700 fa-brands fa-facebook"></i></div>
+                        <div><i class="text-3xl px-[5px] text-red-700 fa-brands fa-instagram"></i></div>
+                        <div><i class="text-3xl px-[5px] text-red-700 fa-regular fa-envelope"></i> turbo@turbo.az</div>
+                        <div><i class="text-3xl px-[5px] text-red-700 fa-solid fa-phone"></i> (012) 505-77-55</div>
+                    </div>
+                </div>
             </div>
-            <div class="relative z-20 flex flex-col items-center justify-center">
-                <i class="fa-solid fa-plus text-white bg-red-700 p-3 rounded-full transform -translate-y-1/2"></i>
-                <p class="text-gray-500">New</p>
+            <div id="footer3" class="xl:px-[200px]">
+                <div class="container mx-auto p-[10px] flex ">
+                    <div class="footerColumn px-[20px] w-full sm:w-1/2 md:w-1/4">
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=280"><span>Abarth</span><span>(7)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=28"><span>Acura</span><span>(2)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=30"><span>Alfa Romeo</span><span>(5)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=156"><span>Aprilia</span><span>(9)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=221"><span>Ashok Leyland</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=134"><span>Asia</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=86"><span>Aston Martin</span><span>(4)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=268"><span>ATV</span><span>(5)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=9"><span>Audi</span><span>(347)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=419"><span>Avatr</span><span>(26)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=274"><span>Avia</span><span>(3)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=218"><span>Baic</span><span>(44)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=327"><span>Bajaj</span><span>(18)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=19"><span>Bentley</span><span>(52)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=387"><span>Bestune</span><span>(27)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=136"><span>BMC</span><span>(3)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=3"><span>BMW</span><span>(2929)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=62"><span>BMW Alpina</span><span>(4)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=92"><span>Brilliance</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=84"><span>Buick</span><span>(4)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=51"><span>BYD</span><span>(119)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=395"><span>C.Moto</span><span>(6)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=38"><span>Cadillac</span><span>(47)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=220"><span>Can-Am</span><span>(4)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=397"><span>Cevo</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=259"><span>CFMOTO</span><span>(39)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=506"><span>Chana</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=163"><span>Changan</span><span>(328)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=52"><span>Chery</span><span>(93)</span></a>
+                    </div>
+                    <div class="footerColumn px-[20px] w-full sm:w-1/2 md:w-1/4">
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=chevrolet"><span>Chevrolet</span><span>(1485)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=chrysler"><span>Chrysler</span><span>(23)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=citroen"><span>Citroen</span><span>(24)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=dacia"><span>Dacia</span><span>(44)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=daewoo"><span>Daewoo</span><span>(336)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=daf"><span>DAF</span><span>(123)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=daihatsu"><span>Daihatsu</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=daimler"><span>Daimler</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=dayun"><span>Dayun</span><span>(4)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=denza"><span>Denza</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=dfsk"><span>DFSK</span><span>(11)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=dnepr"><span>Dnepr</span><span>(3)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=dodge"><span>Dodge</span><span>(48)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=dongfeng"><span>DongFeng</span><span>(23)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=ducati"><span>Ducati</span><span>(9)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=faw"><span>FAW</span><span>(16)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=ferrari"><span>Ferrari</span><span>(2)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=fiat"><span>Fiat</span><span>(182)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=ford"><span>Ford</span><span>(1793)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=forthing"><span>Forthing</span><span>(7)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=foton"><span>Foton</span><span>(7)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=gac"><span>GAC</span><span>(45)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=gaz"><span>GAZ</span><span>(756)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=geely"><span>Geely</span><span>(93)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=genesis"><span>Genesis</span><span>(5)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=gmc"><span>GMC</span><span>(16)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=grandmoto"><span>Grandmoto</span><span>(3)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=gwm"><span>GWM</span><span>(54)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=haima"><span>Haima</span><span>(4)</span></a>
+                    </div>
+                    <div class="footerColumn px-[20px] w-full sm:w-1/2 md:w-1/4">
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=haojue"><span>Haojue</span><span>(8)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=harley-davidson"><span>Harley-Davidson</span><span>(17)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=haval"><span>Haval</span><span>(73)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=honda"><span>Honda</span><span>(378)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=hongqi"><span>Hongqi</span><span>(13)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=howo"><span>HOWO</span><span>(51)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=hummer"><span>Hummer</span><span>(18)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=hyundai"><span>Hyundai</span><span>(4511)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=icar"><span>iCar</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=ij"><span>IJ</span><span>(15)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=im"><span>IM</span><span>(24)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=indian-motorcycle"><span>Indian Motorcycle</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=infiniti"><span>Infiniti</span><span>(145)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=iran-khodro"><span>Iran Khodro</span><span>(78)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=isuzu"><span>Isuzu</span><span>(56)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=iveco"><span>Iveco</span><span>(33)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=jac"><span>JAC</span><span>(26)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=jaguar"><span>Jaguar</span><span>(41)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=jawa"><span>Jawa</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=jeep"><span>Jeep</span><span>(217)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=jetour"><span>Jetour</span><span>(28)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=jianshe"><span>Jianshe</span><span>(2)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=jmc"><span>JMC</span><span>(6)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kaiyi"><span>KAIYI</span><span>(6)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kamaz"><span>KamAz</span><span>(167)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kanuni"><span>Kanuni</span><span>(5)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=karry"><span>Karry</span><span>(4)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kawasaki"><span>Kawasaki</span><span>(17)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kayo"><span>Kayo</span><span>(2)</span></a>
+                    </div>
+                    <div class="footerColumn px-[20px] w-full sm:w-1/2 md:w-1/4">
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=keeway"><span>Keeway</span><span>(2)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kg-mobility"><span>KG Mobility</span><span>(2)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=khazar"><span>Khazar</span><span>(172)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kia"><span>Kia</span><span>(3466)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=king-long"><span>King Long</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kraz"><span>KrAZ</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=ktm"><span>KTM</span><span>(3)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=kuba"><span>Kuba</span><span>(10)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=lada"><span>LADA (VAZ)</span><span>(5315)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=lamborghini"><span>Lamborghini</span><span>(4)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=land-rover"><span>Land Rover</span><span>(1295)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=leapmotor"><span>Leapmotor</span><span>(10)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=lexus"><span>Lexus</span><span>(559)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=li-auto"><span>Li Auto</span><span>(99)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=lifan"><span>Lifan</span><span>(41)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=lincoln"><span>Lincoln</span><span>(18)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=lotus"><span>Lotus</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=luaz"><span>LuAz</span><span>(3)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=lynk-co"><span>Lynk & Co</span><span>(16)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=m-hero"><span>M-Hero</span><span>(2)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=mack"><span>Mack</span><span>(5)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=man"><span>MAN</span><span>(85)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=maple"><span>Maple</span><span>(5)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=maserati"><span>Maserati</span><span>(34)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=maz"><span>MAZ</span><span>(27)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=mazda"><span>Mazda</span><span>(190)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=mega"><span>Mega</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=megelli"><span>Megelli</span><span>(1)</span></a>
+                        <a class="footer__makes-i block py-[4px] text-gray-400" href="/autos?q%5Bmake%5D%5B%5D=mercedes"><span>Mercedes</span><span>(7672)</span></a>
+                    </div>
+                </div>
             </div>
-            <div class="relative z-20 flex flex-col items-center">
-                <i class="fa-regular fa-user py-2 text-gray-500"></i>
-                <p class="text-gray-500">Profile</p>
+        </div>
+        <div class="hidden md:block border-y-[3px] xl:px-[200px]">
+            <div class="container mx-auto flex justify-between p-[10px]">
+                <a href="#">Qaydalar</a>
+                <a href="#">Qanunlar</a>
+                <a href="#">Istifadeci razilasmasi</a>
+                <a href="#">Mexfilik siyaseti</a>
             </div>
-            <div class="relative z-20 flex flex-col items-center">
-                <i class="fa-solid fa-bars py-2 text-gray-500"></i>
-                <p class="text-gray-500">More</p>
+        </div>
+        <div class="bg-red-700 hidden md:block">
+            <div class="container mx-auto flex justify-between text-white py-[15px] xl:px-[200px]">
+                <div> Saytın Administrasiyası reklam bannerlərinin və <br /> yerləşdirilmiş elanların məzmununa görə məsuliyyət daşımır.</div>
+                <div>2006-2024 Digital Classifieds MMC. VÖEN: 1405631661</div>
             </div>
         </div>
     </footer>
